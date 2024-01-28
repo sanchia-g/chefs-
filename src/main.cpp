@@ -85,7 +85,8 @@ void opcontrol() { //classic (?) control scheme, not the arcade one
 	while (true) {
 		double leftJoystick = controller.getAnalog(okapi::ControllerAnalog::leftY);
 		double rightJoystick = controller.getAnalog(okapi::ControllerAnalog::rightY);
-
+                //move this to updateChassis function you should of defined in chassis.cpp
+		//it isnt required but helps make your code clean and organised
 		chassis->getModel()->tank(leftJoystick, rightJoystick);
 
 		rate.delay(100_Hz);
