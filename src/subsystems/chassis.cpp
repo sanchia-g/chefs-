@@ -1,7 +1,6 @@
-#include "include/subsystems/chassis.hpp"
+#include "subsystems/chassis.hpp"
 using namespace okapi::literals;
 
-//ARBITRARY PORTS!!!!
 const int8_t leftBack = 1; 
 const int8_t leftMid = 2; 
 const int8_t leftFront = 3;
