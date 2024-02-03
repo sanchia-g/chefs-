@@ -80,8 +80,7 @@ void opcontrol() { //classic (?) control scheme, not the arcade one
 	
 	okapi::Controller controller;
 	okapi::Rate rate;
-
-
+	
 	while (true) {
 		double leftJoystick = controller.getAnalog(okapi::ControllerAnalog::leftY);
 		double rightJoystick = controller.getAnalog(okapi::ControllerAnalog::rightY);
